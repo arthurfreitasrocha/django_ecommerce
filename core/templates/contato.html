@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/contato.css' %}">
+{% block title %}{{ nome_pagina }} | {{ block.super}}{% endblock %}
+
+
+
+<!-- Body da Página -->
+
+{% block body %}
+    <h2 class="nome_pagina">{{ nome_pagina }}</h2>
+
+    <div class="contato">
+        <div>
+            <span>Nome</span>
+            <input type="text">
+        </div>
+
+        <div>
+            <span>E-mail</span>
+            <input type="text">
+        </div>
+
+        <div>
+            <span>Descrição do Problema</span>
+            <input type="text">
+        </div>
+
+        <button>Enviar</button>
+    </div>
+{% endblock %}
