@@ -1,0 +1,292 @@
+/* Configuração Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #eefffa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* Navbar */
+
+.navbar{
+    background-color: #043b2b;
+    width: calc(100% - 6rem);
+    height: 4rem;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 1rem 3rem;
+}
+
+
+/* Navbar->Logo */
+
+#logo{
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+#logo span{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* Navbar->Menu */
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin: 1.3rem 0;
+}
+
+.navbar ul li{
+    margin: 0 2rem;
+}
+
+.navbar ul a{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar ul div{
+    background-color: white;
+    width: 0%;
+    height: 0.2rem;
+
+    margin-top: 0.2rem;
+
+    transition: ease-in-out;
+}
+
+.navbar ul a:hover ~ div{
+    width: 100%;
+
+    transition: ease-in-out;
+}
+
+
+/* Navbar->Login */
+
+#login{
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+#login a{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.7rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Body */
+
+.body{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0 5rem;
+}
+
+
+
+/* Rodapé */
+
+footer{
+    background-color: #00ac83;
+    width: 100%;
+    height: 3rem;
+}
+
+
+footer span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.9rem;
+
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PÁGINA INICIAL */
+
+.banner{
+    background-color: white;
+    height: calc(100vh - 28.1rem);
+    padding: 5rem;
+
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+.banner h1{
+    font-size: 5rem;
+}
+
+
+.banner h2{
+    display: inline-block;
+    height: 14rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.banner a{
+    background-color: #043b2b;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+.banner a:hover{
+    background-color: #00ac83;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CATÁLOGO */
+
+.body .nome_pagina{
+    display: inline-block;
+
+    margin-bottom: 4rem;
+    font-size: 5rem;
+}
+
+
+.produtos{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.produtos div{
+    background-color: white;
+    max-width: 22.5rem;
+    padding: 3rem;
+
+    border-radius: 3px;
+    box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.4);
+}
+
+.produtos div img{
+    width: 350px;
+    height: 200px;
+
+    border-radius: 5px;
+}
+
+.produtos div h2{
+    margin-top: 2rem;
+
+    font-size: 2rem;
+}
+
+.produtos div h3{
+    display: inline-block;
+    height: 15rem;
+    margin-top: 1rem;
+
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+.produtos div a{
+    background-color: #043b2b;
+    display: inline-block;
+    width: calc(100% - 4rem);
+    padding: 1.2rem 2rem;
+
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+.produtos div a:hover{
+    background-color: #00ac83;
+}
+
+
+
+
+
+
+
+
+
+/* CONTATO */
+
+.contato{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contato div{
+    background-color: red;
+}
