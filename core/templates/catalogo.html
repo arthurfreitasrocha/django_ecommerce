@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'css/catalogo.css' %}">
+{% block style %}<link rel="stylesheet" href="{% static 'css/catalogo.css' %}">{% endblock%}
 {% block title %}{{ nome_pagina }} | {{ block.super}}{% endblock %}
 
 
