@@ -1,0 +1,68 @@
+/* CONTATO */
+
+.contato{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contato div:nth-child(1){
+    margin-top: 0;
+}
+
+
+.contato div{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.5rem 0;
+}
+
+
+.contato div span{
+    font-size: 1.5rem;
+}
+
+
+.contato div input, .contato div textarea{
+    background-color: #00ac83;
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.2rem;
+    color: white;
+
+    border: solid 2px #043b2b;
+    border-radius: 3px;
+}
+
+.contato div input:hover, .contato div textarea:hover, .contato div input:focus, .contato div textarea:focus{
+    background-color: #00ac84d0;
+    border: solid 2px #043b2b;
+}
+
+
+
+.contato button{
+    background-color: #043b2b;
+    display: inline-block;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+    border: solid 1px transparent;
+}
+
+.contato button:hover{
+    background-color: #00ac83;
+}

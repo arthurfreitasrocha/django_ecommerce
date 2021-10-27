@@ -1,0 +1,61 @@
+/* CATÁLOGO */
+
+.produtos{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.produtos div{
+    background-color: white;
+    max-width: 22.5rem;
+    padding: 3rem;
+
+    border-radius: 3px;
+    box-shadow: 0px 6px 13px -2px rgba(0,0,0,0.4);
+}
+
+.produtos div img{
+    width: 350px;
+    height: 200px;
+
+    border-radius: 5px;
+}
+
+.produtos div h2{
+    margin-top: 2rem;
+
+    font-size: 2rem;
+}
+
+.produtos div h3{
+    display: inline-block;
+    height: 15rem;
+    margin-top: 1rem;
+
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+.produtos div a{
+    background-color: #043b2b;
+    display: inline-block;
+    width: calc(100% - 4rem);
+    padding: 1.2rem 2rem;
+
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+.produtos div a:hover{
+    background-color: #00ac83;
+}
