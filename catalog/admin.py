@@ -1,0 +1,20 @@
+from django.contrib import admin
+from .models import Category, Product
+
+# Register your models here.
+class CategoryAdmin(admin.ModelAdmin):
+
+    list_display = ['name', 'slug', 'created', 'modified']
+    search_files = ['name', 'slug']
+    #list_filter = ['created', 'modified']
+
+
+class ProductAdmin(admin.ModelAdmin):
+
+    list_display = ['name', 'slug', 'created', 'modified']
+    search_files = ['name', 'slug', 'category__name']
+
+
+
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Product, ProductAdmin)
