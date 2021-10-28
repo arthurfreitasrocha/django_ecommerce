@@ -5,14 +5,14 @@ from .models import Category, Product
 class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ['name', 'slug', 'created', 'modified']
-    search_files = ['name', 'slug']
+    search_fields = ['name', 'slug']
     #list_filter = ['created', 'modified']
 
 
 class ProductAdmin(admin.ModelAdmin):
 
     list_display = ['name', 'slug', 'created', 'modified']
-    search_files = ['name', 'slug', 'category__name']
+    search_fields = ['name', 'slug', 'category__name']
 
 
 
