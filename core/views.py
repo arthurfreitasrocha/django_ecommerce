@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from catalog.models import Product
+
+
 # Create your views here.
 def index(request):
     context = {
